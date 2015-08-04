@@ -18,8 +18,8 @@ if(mapjs != '')
 }
 else
 {
-	urlFunc = function(bbox) { return ''; };
-	styleFunc = function(feature, resolution) { return null; };
+	var urlFunc = function(bbox) { return ''; };
+	var styleFunc = function(feature, resolution) { return null; };
 }
 
 // Loaded data will be in OSM XML format
