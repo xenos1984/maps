@@ -1,5 +1,14 @@
 var urlFunc = function(bbox) {
-	return 'http://overpass-api.de/api/interpreter?data=((node["light_source"](' + bbox + ');way["light_source"](' + bbox + ');relation["light_source"](' + bbox + '););>;);out meta;';
+	return 'http://overpass-api.de/api/interpreter?data=\
+(\
+(\
+node["light_source"](' + bbox + ');\
+way["light_source"](' + bbox + ');\
+relation["light_source"](' + bbox + ');\
+);\
+>;\
+);\
+out meta;';
 }
 
 var styleFunc = function(feature, resolution) {
