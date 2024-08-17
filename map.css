@@ -54,7 +54,7 @@ table {
 	right: 8px;
 }
 #popup-closer:after {
-	content: "✖";
+	content: "\2716";
 }
 #pl {
 	position: absolute;
